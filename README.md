@@ -17,7 +17,7 @@ Nesse cenário hipotético todos os métodos são do tipo GET.
 ------LOGIN:
   Requisitos:
     - O campo user deve aceitar e-mai
-    - O campo password deve validar se a senha possui pelo menos uma letra maiúscula e 5 números.
+    - O campo password deve validar se a senha possui pelo menos uma letra maiúscula e um número.
     - Após validar os dados de login utilize os dados digitados em login e senha para obter apenas 1 usuário.
 
 End-point Listar usuários:
