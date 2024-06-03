@@ -1,0 +1,66 @@
+main {
+  position: relative;
+  width: 416px;
+  height: 802px;
+
+  background: #FFFFFF;
+
+  .back {
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    left: 24px;
+    top: 31px;
+    background-color: aquamarine;
+
+    background: url("../../assets/svg/Path.svg");
+  }
+
+  .title {
+    position: relative;
+    height: 28px;
+    left: 76px;
+    top: 25px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #343434;
+  }
+
+  button {
+    position: absolute;
+    width: 100%;
+    top: 84%;
+    height: 42px;
+
+    background: #F88339;
+    border-radius: 16px;
+    border: none;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    // text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+
+  .form-div {
+    position: absolute;
+    left: 6.25%;
+    right: 6.49%;
+    top: 10.47%;
+    bottom: 19.69%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(54, 41, 183, 0.07);
+    border-radius: 15px;
+  }
+}

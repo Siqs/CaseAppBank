@@ -1,0 +1,158 @@
+main {
+  position: relative;
+  width: 416px;
+  height: 896px;
+
+  background: #234485;
+
+  .avatar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 24px;
+    top: 56px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    position: absolute;
+    width: 300px;
+    height: 48px;
+    left: 96px;
+    top: 36px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+  }
+
+  .content {
+    position: absolute;
+    width: 416px;
+    height: 766px;
+    left: 0px;
+    top: 130px;
+
+    background: #FFFFFF;
+    border-radius: 30px 30px 0px 0px;
+
+    .card {
+      position: absolute;
+      width: 365px;
+      height: 248px;
+      left: 24px;
+      top: 34px;
+      border-radius: 30px;
+      overflow: hidden;
+
+      background-color: #F88339;
+
+      .card-name {
+        position: absolute;
+        left: 6.25%;
+        top: 1.5%;
+        bottom: 69.93%;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        
+        color: #FFFFFF;
+      }
+
+      .amount-label {
+        position: absolute;
+        width: 109px;
+        left: 6.25%;
+        height: 18px;
+        top: 125px;
+
+        /* Subline/medium/14 */
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        /* or 114% */
+        color: #FFFFFF;
+      }
+
+      .amount{
+        position: absolute;
+        width: 130px;
+        height: 18px;
+        left: 6.25%;
+        top: 135px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 16px;
+        /* or 80% */
+
+        color: #FFFFFF;
+      }
+
+      .label{
+        position: absolute;
+        width: 130px;
+        height: 18px;
+        left: 6.25%;
+        top: 205px;
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        /* or 80% */
+
+        color: #FFFFFF;
+      }
+
+      .circle-one {
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        left: -54px;
+        top: -32px;
+        border-radius: 50%;
+    
+        background: #234485;
+      }
+    }
+
+    button {
+      position: absolute;
+      left: 24px;
+      width: 120px;
+      height: 100px;
+      border-radius: 30px;
+      border: none;
+      top: 310px;
+
+      background-color: #FFAF2A;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+
+      color: #FFFFFF;
+    }
+  }
+}

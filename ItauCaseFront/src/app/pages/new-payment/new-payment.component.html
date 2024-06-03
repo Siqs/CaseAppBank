@@ -1,0 +1,43 @@
+<main>
+    <div class="back" (click)="back()"></div>
+    <p class="title"> Nova Transferência</p>
+    <div class="form-div">
+      <form [formGroup]="newPaymentForm">
+        <app-select
+        selectName="bank"
+        label="Selecione o Banco"
+        selectType="bank"></app-select>
+        <app-input-pure
+        formControlName="account"
+        inputName="account"
+        type="number"
+        label="Digite a conta"></app-input-pure>
+        <app-input-pure
+        formControlName="recipientName"
+        inputName="name"
+        type="text"
+        label="Nome do Recebedor"></app-input-pure>
+        <app-input-pure
+        formControlName="recipientCPF"
+        inputName="cpf"
+        type="number"
+        label="CPF do Recebedor"></app-input-pure>
+        <app-input-pure
+        formControlName="amount"
+        inputName="amount"
+        type="number"
+        label="Valor da Transferência"></app-input-pure>
+        <app-select
+        selectName="type"
+        label="Tipo de Transferência"
+        selectType="payment"></app-select>
+        <app-input-pure
+        formControlName="message"
+        inputName="message"
+        type="text"
+        label="Mensagem"></app-input-pure>
+      </form>
+      <button (click)="submit()"> Próximo </button>
+  </div>
+
+</main>

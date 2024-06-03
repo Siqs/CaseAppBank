@@ -1,0 +1,59 @@
+main {
+  position: relative;
+  width: 414px;
+  height: 896px;
+
+  background: #234485;
+
+  .logo {
+    position: absolute;
+    width: 110px;
+    height: 104px;
+    left: 152px;
+    top: 282px;
+
+    background: url("../../assets/svg/itau-logo.svg");
+  }
+  
+  .loader-section {
+    position: absolute;
+    left:178px;
+    top:392px;
+    display: grid;
+    .circle{
+      grid-column: 1;
+      grid-row: 1;
+      border:5px solid #F37E00;
+      border-radius:50%;
+      width:52px;
+      height:52px;
+    }
+
+    .mask{
+      grid-column: 1;
+      grid-row: 1;
+      border:5px solid rgba(243,126,0,0.25);
+      border-radius:50%;
+      width:52px;
+      height:52px;
+    }
+  }
+
+  .title-section {
+    position: absolute;
+    width: 187px;
+    height: 35px;
+    left: 114px;
+    top: 489px;
+
+    font-family: 'Archivo Narrow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.3px;
+
+    color: #FFFFFF;
+  }
+}

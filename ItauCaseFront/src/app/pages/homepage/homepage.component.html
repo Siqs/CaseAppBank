@@ -1,0 +1,28 @@
+<main>
+  <div class="avatar">
+    <img [src]="getAvatar()">
+  </div>
+  
+  <div class="title">
+    <p>Olá, {{ name }}</p>
+    <p> Ag. 342, CC {{ maskedAccount }}<p>
+  </div>
+
+  <div class="content">
+      <div class="card" (click)="goToStatements()">
+        <div class="circle-one"></div>
+        <p class="card-name">{{ name }}</p>
+    
+        <p class="amount-label">saldo na conta</p>
+        <p class="amount"> R$ {{ userAccount.amount }}</p>
+
+        <p class="label">Ver Extrato  ></p>
+      </div>
+    
+      <button (click)="newPayment()"> Nova Transferência</button>
+
+  </div>
+
+
+</main>
+  

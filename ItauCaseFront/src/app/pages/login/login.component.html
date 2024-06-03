@@ -1,0 +1,36 @@
+<main>
+  <div class="content">
+    <p class="title">Login</p>
+    <p class="subtitle">Bem-vindo ao Itaú Transfer!</p>
+    <div class="form">
+      <form [formGroup]="loginForm">
+        <app-login-input
+          formControlName="email"
+          inputName="email"
+          type="email"
+          label="E-mail" >
+          <i><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.64 7.75861C16.64 9.96775 14.8491 11.7586 12.64 11.7586C10.4309 11.7586 8.64 9.96775 8.64 7.75861C8.64 5.54947 10.4309 3.75861 12.64 3.75861C14.8491 3.75861 16.64 5.54947 16.64 7.75861ZM14.64 7.75861C14.64 8.86318 13.7446 9.75861 12.64 9.75861C11.5354 9.75861 10.64 8.86318 10.64 7.75861C10.64 6.65404 11.5354 5.75861 12.64 5.75861C13.7446 5.75861 14.64 6.65404 14.64 7.75861Z" fill="#171717"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.64 15.7586C16.64 15.2063 16.1923 14.7586 15.64 14.7586H9.64C9.08772 14.7586 8.64 15.2063 8.64 15.7586V21.7586H6.64V15.7586C6.64 14.1017 7.98315 12.7586 9.64 12.7586H15.64C17.2969 12.7586 18.64 14.1017 18.64 15.7586V21.7586H16.64V15.7586Z" fill="#171717"/>
+            </svg>
+            </i>
+        </app-login-input>
+        <app-login-input
+          formControlName="password"
+          inputName="password"
+          type="password"
+          label="Senha" >
+          <i><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.64 11.431C20.2969 11.431 21.64 12.7741 21.64 14.431V20.431C21.64 22.0879 20.2969 23.431 18.64 23.431H6.63998C4.98313 23.431 3.63998 22.0879 3.63998 20.431V14.431C3.63998 12.7741 4.98313 11.431 6.63998 11.431V8.43102C6.63998 5.11731 9.32627 2.43102 12.64 2.43102C15.9537 2.43102 18.64 5.11731 18.64 8.43102V11.431ZM12.64 4.43102C14.8491 4.43102 16.64 6.22187 16.64 8.43102V11.431H8.63998V8.43102C8.63998 6.22187 10.4308 4.43102 12.64 4.43102ZM18.64 13.431H6.63998C6.0877 13.431 5.63998 13.8787 5.63998 14.431V20.431C5.63998 20.9833 6.0877 21.431 6.63998 21.431H18.64C19.1923 21.431 19.64 20.9833 19.64 20.431V14.431C19.64 13.8787 19.1923 13.431 18.64 13.431Z" fill="#171717"/>
+            </svg>
+            </i>
+        </app-login-input>
+      </form>
+    </div>
+    <div class="button-group">
+      <button form="loginForm" (click)="submit()">Login</button>
+      <p class="signup">Não tem uma conta? <b>Cadastre-se</b></p>
+      <div class="line-divider"></div>
+    </div>
+  </div>
+</main>

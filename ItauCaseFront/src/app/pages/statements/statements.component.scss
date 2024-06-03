@@ -1,0 +1,124 @@
+main {
+  position: relative;
+  width: 416px;
+  height: 812px;
+  border: 1px solid #aaa;
+  
+  background: #FFFFFF;
+
+  .back {
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    left: 24px;
+    top: 31px;
+    background-color: aquamarine;
+
+    background: url("../../assets/svg/Path.svg");
+  }
+
+  .title {
+    position: relative;
+    width: 72px;
+    height: 28px;
+    left: 76px;
+    top: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #343434;
+  }
+
+  li {
+    all: unset;
+  }
+
+  .payment-card {
+    width: 363px;
+    height: 110px;
+    left: 31px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 30px rgba(54, 41, 183, 0.07);
+    border-radius: 15px;
+
+    .name {
+      position: relative;
+      right: 6.61%;
+      top: 14.9%;
+      bottom: 82.14%;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+
+      color: #343434;
+    }
+
+    .amount {
+      position: relative;
+      right: 6.61%;
+
+      /* Caption / 1 */
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+      text-align: right;
+
+      /* Primary / 1 */
+      color: #3629B7;
+    }
+    .date {
+      position: relative;
+      right: 6.61%;
+
+      /* Caption / 1 */
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+      text-align: right;
+
+      /* Primary / 1 */
+      color: #3629B7;
+    }
+
+    .label-valor {
+      position: relative;
+      left: 6.61%;
+      bottom: 50%;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #979797;
+    }
+    .label-date {
+      position: relative;
+      left: 6.61%;
+      bottom: 53%;
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: #979797;
+    }
+  }
+
+}

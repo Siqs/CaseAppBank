@@ -1,0 +1,17 @@
+<main>
+  <div class="back" (click)="back()"></div>
+  <p class="title"> Extrato</p>
+  
+  <ul>
+    <li *ngFor="let payment of payments">
+      <div class="payment-card">
+        <p class="name"> {{payment.name}} </p>
+        <p class="amount"> {{ payment.amount}} </p>
+        <p class="date">{{ payment.createdAt }}</p>
+        <p class="label-valor">Valor</p>
+        <p class="label-date">Data e Hora</p> 
+      </div>
+    </li>
+  </ul>
+
+</main>

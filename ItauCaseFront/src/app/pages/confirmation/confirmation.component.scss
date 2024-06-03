@@ -1,0 +1,135 @@
+main {
+  position: relative;
+  width: 445px;
+  height: 864px;
+  
+  background: #FFFFFF;
+
+  .back {
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    left: 24px;
+    top: 31px;
+    background-color: aquamarine;
+
+    background: url("../../assets/svg/Path.svg");
+  }
+
+  .title {
+    position: relative;
+    height: 28px;
+    left: 76px;
+    top: 25px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #343434;
+  }
+
+  button {
+    position: relative;
+    width: 327px;
+    left: 58.48px;
+    height: 42px;
+
+    background: #F88339;
+    border-radius: 16px;
+    border: none;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    // text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+  .success-img{
+    position: relative;
+    left:91px;
+    top:16px;
+    width: 264px;
+    height: 174px;
+
+    background: url("../../assets/png/Illustration\ 2.png");
+  }
+
+  .success-label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    /* or 83% */
+    text-align: center;
+
+    color: #118732;
+  }
+
+  .bill {
+    position: relative;
+    width: 388.04px;
+    height: 380.49px;
+    left: 28.48px;
+    top: 44.49px;
+
+    .divider{
+      border: 0.5px dashed #CBCBCB;
+    }
+  
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .label{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #979797;
+      }
+      
+      .valor{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+
+        color: #343434;
+      }
+
+      .label-main{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #343434;
+      }
+
+      .valor-main {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        color: #FF4267;
+      }
+    }
+  }
+
+
+}

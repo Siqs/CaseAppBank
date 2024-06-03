@@ -1,0 +1,44 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: -0.171429px;
+
+    color: #8F92A1;
+  }
+  .input-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .icon-preffix {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
+    input {
+      all: unset;
+      width: 336px;
+      height: 50px;
+      border-bottom: 2px solid rgba(143, 146, 161, 0.2);
+    
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+    
+      /* Black/B100 */
+      color: #171717;
+
+      padding-left: 42px;
+    }
+    
+  }
+}

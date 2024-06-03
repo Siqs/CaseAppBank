@@ -1,0 +1,22 @@
+<main>
+  <div class="back" (click)="back()"></div>
+  <p class="title"> {{ confirmed? "Comprovante" : "Transferência" }}</p>
+
+<div *ngIf="confirmed" class="success">
+  <div class="success-img"></div> 
+  <p class="success-label">Transferência concluída com sucesso</p>
+</div>
+
+<div class="bill">
+  <div class="row"><p class="label">Nome</p><p class="valor">{{ name }}</p></div>
+  <div class="row"><p class="label">CPF</p><p class="valor">{{ cpf }}</p></div>
+  <div class="row"><p class="label">Agência</p><p class="valor">{{ bank }}</p></div>
+  <div class="row"><p class="label">Conta</p><p class="valor">{{ account }}</p></div>
+  <div class="row"><p class="label">Data</p><p class="valor">{{ date }}</p></div>
+  <div class="row"><p class="label">Hora</p><p class="valor">{{ hour }}</p></div>
+  <div class="divider"></div>
+  <div class="row"><p class="label-main">Valor</p><p class="valor-main">R$ {{ amount }}</p></div>
+  <div class="divider"></div>
+</div>
+<button (click)="submit()">{{ confirmed? "Enviar Comprovante" : "Confirmar Transferência" }}</button>
+</main>

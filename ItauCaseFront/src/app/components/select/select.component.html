@@ -1,0 +1,6 @@
+<div class="select-wrapper">
+  <label [for]="selectName"> {{ label }} </label>
+  <select (change)="onChange($event)">
+    <option *ngFor="let opt of options" [value]="opt.id">{{ opt.name }}</option>
+  </select>
+</div>
