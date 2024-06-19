@@ -21,6 +21,7 @@ export class ConfirmationComponent implements OnInit {
   amount: string = '';
 
   confirmed: boolean = false;
+  send: boolean = false;
   constructor(
     private router: Router,
     private datePipe: DatePipe,
@@ -54,15 +55,24 @@ export class ConfirmationComponent implements OnInit {
     };
   }
   submit() {
-    console.log('q');
-    this.httpClient
-      .post('http://localhost:8080/payment/new', this.getRequestObject())
-      .subscribe({
-        next: (response: any) => {
-          this.confirmed = true;
-        },
-        error: () => console.log('error'),
-      });
+    if (!this.confirmed) {
+      const headers = {
+        Authorization: `Bearer ${sessionStorage.getItem('User@token')}`,
+      };
+      //to-do criar interceptor para requests com header automatico
+      this.httpClient
+        .post('http://localhost:8080/payment/new', this.getRequestObject(), {
+          headers,
+        })
+        .subscribe({
+          next: (response: any) => {
+            this.confirmed = true;
+          },
+          error: () => console.log('error'),
+        });
+    } else {
+      this.send = true;
+    }
   }
 
   ngOnInit() {

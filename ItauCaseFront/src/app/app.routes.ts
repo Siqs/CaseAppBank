@@ -9,11 +9,11 @@ import { StatementsComponent } from './pages/statements/statements.component';
 
 export const routes: Routes = [
   {
-    path: 'splash',
+    path: '',
     component: SplashComponent,
   },
   {
-    path: '',
+    path: 'onboarding',
     component: OnboardingComponent,
   },
   {

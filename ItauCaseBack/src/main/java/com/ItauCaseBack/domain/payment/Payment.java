@@ -13,14 +13,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Payment {
-    // simulando atributos dos payments vindo na api dada pelo teste
-    @Id
-    @GeneratedValue
-    private Integer id;
+    @EmbeddedId
+    private PaymentId internalId;
     private String createdAt;
     private String category;
     private String name;
     private String amount;
-
-
+    private String id;
 }

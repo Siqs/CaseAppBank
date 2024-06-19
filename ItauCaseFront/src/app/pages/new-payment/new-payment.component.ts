@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { InputPureComponent } from '../../components/input-pure/input-pure.component';
 import { SelectComponent } from '../../components/select/select.component';
@@ -16,12 +21,12 @@ export class NewPaymentComponent {
 
   constructor(private router: Router) {
     this.newPaymentForm = new FormGroup({
-      bank: new FormControl('', []),
-      account: new FormControl('', []),
-      recipientName: new FormControl('', []),
-      recipientCPF: new FormControl('', []),
-      amount: new FormControl('', []),
-      type: new FormControl('', []),
+      bank: new FormControl('', [Validators.required]),
+      account: new FormControl('', [Validators.required]),
+      recipientName: new FormControl('', [Validators.required]),
+      recipientCPF: new FormControl('', [Validators.required]),
+      amount: new FormControl('', [Validators.required]),
+      type: new FormControl('', [Validators.required]),
       message: new FormControl('', []),
     });
   }

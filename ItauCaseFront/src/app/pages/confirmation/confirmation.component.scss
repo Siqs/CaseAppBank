@@ -73,6 +73,117 @@ main {
     color: #118732;
   }
 
+  .rectangle {
+    position: absolute;
+    width: 373px;
+    height: 188px;
+    left: 44px;
+    top: 282px;
+
+    background: #FFFFFF;
+    z-index: 1;
+    box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.85);
+    border-radius: 4px;
+
+    .title {
+      position: relative;
+      width: 221px;
+      height: 23px;
+      left: 25px;
+      top: -5px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #222222;
+    }
+
+    .share{
+      position: absolute;
+      width: 229.13px;
+      height: 13.37px;
+      left: 25px;
+      top: 35px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #888888;
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: end;
+      
+
+      .socialButton {
+        display: flex;
+        width: 51.45px;
+        height: 53.46px;
+        margin-top: 20px;
+        
+        background: rgba(34, 34, 34, 0.06);
+        border-radius: 50%;
+      }
+
+      .socialIcon1 {
+        position: absolute;
+        left: 13.28%;
+        right: 76.38%;
+        top: 58.1%;
+        bottom: 58.27%;
+      }
+
+      .socialIcon2 {
+        position: absolute;
+        left: 37.28%;
+        right: 76.38%;
+        top: 57.1%;
+        bottom: 58.27%;
+      }
+
+      .socialIcon3 {
+        position: absolute;
+        left: 58.28%;
+        right: 76.38%;
+        top: 57.1%;
+        bottom: 58.27%;
+      }
+
+      .socialIcon4 {
+        position: absolute;
+        left: 81.48%;
+        right: 76.38%;
+        top: 57.1%;
+        bottom: 58.27%;
+      }
+
+      .socialLabel {
+        position: absolute;
+        width: 50px;
+        height: 11px;
+        margin-top: 55px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+
+        color: #888888;
+      }
+
+    }
+  }
+
   .bill {
     position: relative;
     width: 388.04px;
